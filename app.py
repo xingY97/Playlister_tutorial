@@ -9,9 +9,9 @@ client = MongoClient(host=host)
 db = client.get_default_database()
 playlists = db.playlists
 
-client = MongoClient()
-db = client.Playlister
-playlists = db.playlists
+# client = MongoClient()
+# db = client.Playlister
+# playlists = db.playlists
 
 app = Flask(__name__)
 
