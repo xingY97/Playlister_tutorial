@@ -17,11 +17,14 @@
             <input type='hidden' name='_method' value='DELETE'>
             <button class='btn btn-primary' type='submit'>Delete</button>
         </form></p>
+        {% include 'partials/comment_form.html' %}
 
         <hr>
-        <!--Comment form -->
+        <!--Show Comments -->
+        {% for comment in comments %}
         {% include 'partials/comment_form.html' %}
-        
+        {% endfor %}
+
     </div>
 </div>
 {% endblock %}
